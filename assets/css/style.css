@@ -1,0 +1,202 @@
+p{
+    margin-bottom:0px !important;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+h2 {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+h5 {
+    font-weight: 400;
+}
+
+/* MENÚ ANCLAS */
+#content-anclas>ul>li {
+    padding-left: 20px;
+    padding-right:20px;
+    list-style: none;
+}
+
+/* SLIDER PRODUCTO */
+ /* Agrega estilos personalizados aquí según sea necesario */
+ .swiper-container {
+    width: 100%;
+    padding: 20px;
+}
+.swiper-slide {
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.box {
+    width: 300px;
+    height: 250px;
+    /* background-color: #ffffff; */
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.5s ease, transform 0.3s ease;
+}
+
+.box:hover {
+    /* background-color: #f8f9fa ; */
+    /* box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1); */
+    transform: translateY(-5px); /* Mueve hacia arriba 5 píxeles en el hover */
+}
+
+/* Imágenes productos */
+.bg-producto1 {
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-image: url(/assets/img/product/iphone15pro.png);
+}
+.bg-producto2 {
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-image: url(/assets/img/product/iphoneSE.png);
+}
+.bg-producto3 {
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-image: url(/assets/img/product/iphone14.png);
+}
+
+
+/* ICONOS APPLE NAVEGACIÓN */
+.chapternav-item .li {
+    display: inline-block;
+  vertical-align: top;
+  margin: 0 -0.1176470588em;
+  padding: 0 20px;
+}
+
+.text-hover {
+color:black;
+}
+
+.text-hover:hover {
+    color: #FF6F61;
+    cursor: pointer;
+}
+
+.text-hover-2 {
+    color: #3a3636;
+    }
+    
+.text-hover-2:hover {
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.5s ease, transform 0.3s ease;
+}
+
+/* SECTION NEW */
+.bg-new {
+    background-color:#000000 ;
+    background-image: url(/assets/img/product/new.jpg);
+    background-size:75%;
+    background-repeat: no-repeat;
+    background-position: 100vh bottom;
+    height: 65vh;
+    animation: scrollAnimation 0.8s ease-in-out ;
+}
+
+@keyframes scrollAnimation {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+  
+
+#new{
+    background-color:#000000 ;   
+}
+
+.text-bg-gradient {
+    color:#7a7a7a
+}
+
+/* IPHONE ES MÁS */
+.bg-info1 {
+    background-color: white;
+    height: 40vh;
+}
+
+.bg-info2 {
+    background-color: rgb(26, 25, 25);
+    height: 40vh;
+}
+
+.bg-info3 {
+    background-color: white;
+    height: 40vh;
+}
+
+.bg-light {
+    background-color: #f8f9fa; /* O el color de fondo que prefieras */
+  }
+  
+  .slider-container {
+    position: relative;
+  }
+  
+  .slider {
+    display: flex;
+    width: 300%; /* 100% por cada slide */
+    transition: transform 0.5s ease; /* Ajusta la duración y el tipo de transición según tus preferencias */
+  }
+  
+  .slide {
+    flex: 1;
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    background-size: cover;
+  }
+  
+  .navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff; /* O el color de los puntos que prefieras */
+    margin: 0 8px;
+    cursor: pointer;
+  }
+  
+  .row {
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté sobre el slider */
+  }
+  
+  .text-hover-2:hover {
+    cursor: pointer;
+  }
+  
+  /* Estilos específicos para cada imagen en el slider */
+  .slide:nth-child(1) {
+    background-image: url('ruta-de-la-imagen-1.jpg');
+  }
+  
+  .slide:nth-child(2) {
+    background-image: url('ruta-de-la-imagen-2.jpg');
+  }
+  
+  .slide:nth-child(3) {
+    background-image: url('ruta-de-la-imagen-3.jpg');
+  }
