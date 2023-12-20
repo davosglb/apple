@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+
+<section class="pt-5">
+    <div class="container">
+        <div class="swiper-container bg-dark">
+            <div class="swiper-wrapper bg-danger">
+                <!-- Repite este bloque para cada elemento en tu carrusel -->
+                <div class="swiper-slide" style="background-image: url('/assets/img/product/iphone15pro.png')"></div>
+                <div class="swiper-slide" style="background-image: url('/assets/img/product/iphone15pro.png')"></div>
+                <div class="swiper-slide" style="background-image: url('/assets/img/product/iphone15pro.png')"></div>
+                <div class="swiper-slide" style="background-image: url('/assets/img/product/iphone15pro.png')"></div>
+                <div class="swiper-slide" style="background-image: url('/assets/img/product/iphone15pro.png')"></div>
+                <div class="swiper-slide" style="background-image: url('/assets/img/product/iphone15pro.png')"></div>
+                <div class="swiper-slide" style="background-image: url('/assets/img/product/iphone15pro.png')"></div>
+                <div class="swiper-slide" style="background-image: url('/assets/img/product/iphone15pro.png')"></div>
+                <!-- Fin del bloque repetido -->
+            </div>
+            <!-- Agrega la paginación si es necesario -->
+            <div class="swiper-pagination"></div>
+            <!-- Agrega los controles de navegación si es necesario -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 4, // Número de cajas visibles
+        spaceBetween: 20, // Espacio entre las cajas
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+</script>
+
+</body>
+</html>
