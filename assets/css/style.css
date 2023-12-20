@@ -117,6 +117,14 @@ color:black;
     height: 40vh;
     animation: scrollAnimation 0.8s ease-in-out;
 }
+.bg-new-2 {
+    background-color: #ffffff;
+    background-image: url(/assets/img/product/new-2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position:bottom;
+    height: 40vh;
+}
 
 
 @keyframes scrollAnimation {
@@ -236,7 +244,11 @@ color:black;
       }
       .bg-new {
         height: 40vh;
-        background-position: 20vh bottom;
+        background-position:bottom;
+    }
+    .bg-new-2 {
+        height: 30vh;
+        background-position:bottom;
     }
     }
     
@@ -256,6 +268,10 @@ color:black;
       .bg-new {
         height: 60vh;
         background-position: 60vh bottom;
+    }
+    .bg-new-2 {
+        height: 60vh;
+        background-position: bottom;
     }
 
       .text-brand-2{
