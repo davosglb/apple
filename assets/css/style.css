@@ -39,7 +39,7 @@ h5 {
 }
 
 .box-info {
-  width: 400px;
+  /* width: 400px; */
   min-height:450px;
   /* background-color: #ffffff; */
   border-radius: 20px;
@@ -51,6 +51,7 @@ h5 {
   /* box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1); */
   /* transform: translateY(-5px); Mueve hacia arriba 5 píxeles en el hover */
 }
+
 
 .img-info-2 {
     background-image: url(/assets/img/product/img-info-2.png);
@@ -266,11 +267,11 @@ color:black;
         padding-left: 50px;
       }
       .bg-new {
-        height: 60vh;
+        height: 80vh;
         background-position: 60vh bottom;
     }
     .bg-new-2 {
-        height: 60vh;
+        height: 80vh;
         background-position: bottom;
     }
 

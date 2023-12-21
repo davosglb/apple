@@ -1,59 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <style>
-        
-    </style>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
 
-<section class="pt-5">
-    <div class="container">
-        <div class="swiper-container bg-dark">
-            <div class="swiper-wrapper bg-danger">
-                <!-- Repite este bloque para cada elemento en tu carrusel -->
-                <div class="swiper-slide" style="background-image: url('/assets/img/product/iphone15pro.png')"></div>
-                <div class="swiper-slide" style="background-image: url('/assets/img/product/iphone15pro.png')"></div>
-                <div class="swiper-slide" style="background-image: url('/assets/img/product/iphone15pro.png')"></div>
-                <div class="swiper-slide" style="background-image: url('/assets/img/product/iphone15pro.png')"></div>
-                <div class="swiper-slide" style="background-image: url('/assets/img/product/iphone15pro.png')"></div>
-                <div class="swiper-slide" style="background-image: url('/assets/img/product/iphone15pro.png')"></div>
-                <div class="swiper-slide" style="background-image: url('/assets/img/product/iphone15pro.png')"></div>
-                <div class="swiper-slide" style="background-image: url('/assets/img/product/iphone15pro.png')"></div>
-                <!-- Fin del bloque repetido -->
-            </div>
-            <!-- Agrega la paginación si es necesario -->
-            <div class="swiper-pagination"></div>
-            <!-- Agrega los controles de navegación si es necesario -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+    <!-- Example Code -->
+    
+    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+      <div class="carousel-inner bg-dark d-flex justify-content-center">
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-25" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Primera diapositiva" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">First slide</text></svg>
         </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-25" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: segunda diapositiva" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text></svg>
+        </div>
+        <div class="carousel-item active">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-25" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: tercera diapositiva" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text></svg>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Anterior</font></font></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Próximo</font></font></span>
+      </button>
     </div>
-</section>
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-<script>
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 4, // Número de cajas visibles
-        spaceBetween: 20, // Espacio entre las cajas
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
-</script>
-
-</body>
+    
+    <!-- End Example Code -->
+  </body>
 </html>
